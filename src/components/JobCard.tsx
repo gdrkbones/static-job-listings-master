@@ -55,6 +55,7 @@ const JobCard = ({
         class={clsx([
           "absolute w-12 top-0 -translate-y-1/2",
           "md:relative md:translate-y-0 md:my-auto md:mr-4",
+          "lg:w-20 lg:ml-4 mr-6",
         ])}
         src={logo}
         alt={`${company} logo`}
@@ -95,7 +96,8 @@ const JobCard = ({
       <div
         className={clsx(
           "flex flex-1 flex-wrap py-1 text-primary items-center font-bold",
-          "sm:justify-center"
+          "sm:justify-center",
+          "md:justify-end"
         )}
       >
         <Tag content={role} />
